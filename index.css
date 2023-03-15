@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 72vh;
+    bottom: 1.75rem;
+    width: 100%;
+    background-image:  linear-gradient(rgba(202, 210, 226, 0),rgba(0, 42, 102, 0.548),rgba(1, 30, 70, 0.719),rgba(168, 51, 5, 0.425)), url(Firm2.jpg);
+    background-position: center;
+    background-size: cover; 
+    position: relative;
+}
+.wala{
+    min-height: 10vh;
+    width: 100%;
+    bottom: 5rem;
+}
+.wala p{
+    text-align: right; 
+    position: absolute;
+    top: .55rem;
+    right: 26.5%;
+    font-weight: bolD;
+}
+.wala p1{
+    text-align: right;  
+    font: normal;
+    font-size: 13.5px;   
+    padding-left: 75%; 
+    TOP: .5REM;
+    position: relative;
+}
+.wala p2{
+    text-align: right;  
+    font: normal;   
+    padding-left: 75%; 
+    TOP: .25rem;
+    font-size: 13.5px;
+    position: relative;
+}
+NAV{
+    display: flex;
+    padding: .05% 3%;
+    bottom: 1rem;
+    justify-content: space-between;
+    ALIGN-ITEMS:center;
+    position: relative;
+    height: min-content;
+    min-height: 2vh;
+    background-color: #01325a;
+}
+nav IMG{ 
+    width: 210px;
+    height: 95px;
+    TOP: 4rem;  
+}
+.nav-links{ 
+        text-align: right;
+        position: relative;
+        top: 1.3rem;
+        min-height: 2vh;
+}
+.nav-links ul li{
+    list-style: NONE;
+    display: inline-block;
+    padding: 8PX 12PX;
+    position: relative;
+    bottom: 1.5rem;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 16px;
+    font:xx-large;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #087cd4;
+    display: block;
+    margin:auto;
+    transition: .5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+    background-color: rgb(11, 90, 155);
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h2{
+    font-size: 40px;
+    position: relative;
+    font: normal;
+    top: 5.5rem; 
+}
+.text-box p{
+    margin: 8px 0 30px;
+    font-size: 18px;
+    font: normal;
+    color: #fff;
+    position: relative;
+    top: 6rem;
+}
+.jcb-btn {
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    padding: 12px 36px;
+    position: relative;
+    top: 7rem;
+}
+.jcb-btn:hover{
+    border: 2px solid #e4d4d7;
+    color: rgb(255, 255, 255);
+    text-shadow: #b1b7bd;
+    background:  linear-gradient(rgba(75, 119, 216, 0.24),rgba(0, 20, 78, 0.986));
+    transition: 1ms;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav-links ul li :hover{
+    transition: 1ms;
+    font-size: 21px;
+    color: #ffffff;
+}
+nav .fa{
+    display: none
+}
+@media(max-width: 700px){
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #01187ce8;
+        height: 100vh;
+        width: 200px;
+        top:0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+        nav .fa{
+            display: inline-flex;
+            color: #fff;
+            margin: 10px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+}
+.maincontent1 {
+min-height: 60px;
+margin-bottom: 20px;
+width: 100%;
+line-height: 260%;
+text-align: left;
+padding-left: 2rem;
+top: 5px;
+}
+.maincontent1 p{
+    text-align: left;
+    position: relative;
+    top: 1rem;   
+    font-weight: bold;
+    font-size: 35px;
+    font: normal;     
+}
+.maincontent1 p1{
+    text-align: left;
+    position: relative;
+    font-size: 45px;
+    color: blue;
+    top: 1.40rem;
+    font: oblique; 
+    font-family: 'Domine', serif;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
